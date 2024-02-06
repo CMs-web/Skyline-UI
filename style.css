@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Trueno;
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+nav span {
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+    font-size: .7rem;
+    padding: 0% 10px;
+    transition: color ease-in-out .3s;
+}
+
+nav ul a:hover {
+    color: rgba(0, 0, 0, 0.808);
+}
+
+nav button {
+    padding: 5px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: color ease-in-out .3s,
+    border ease-in-out .3s;
+    font-size: .7rem;
+}
+
+nav button:hover {
+    background-color: black;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: clamp(2rem, 5.5vw, 4rem);
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+.content p {
+    margin-top: 1rem;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.808);
+    font-family: 'Roboto', sans-serif;
+    font-size: .7rem;
+    font-weight: 500;
+}
+.btns button {
+    padding: 8px;
+    margin-top: 25px;
+    font-size: .8rem;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: color ease-in-out .3s,
+    border ease-in-out .3s;
+}
+
+.btns button:first-child {
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+}
+
+.btns button:last-child:hover{
+    background-color: black;
+    color: white;
+}
+figure {
+    width: 100%;
+    height: 176px;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width:768px ){
+    nav ul,
+    main img {
+        display: none;
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
